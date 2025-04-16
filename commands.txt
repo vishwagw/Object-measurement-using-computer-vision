@@ -1,0 +1,11 @@
+Basic:
+python ruler_bkend.py input.jpg
+python ruler_resized.py input.jpg
+
+with calibration:
+python object_measurement.py image.jpg --known_width 100 --ref_width_mm 25
+python ruler_resized.py input.jpg --known_width 100 --ref_width_mm 25
+
+saving output:
+python object_measurement.py image.jpg --output measured_objects.jpg
+python ruler_resized.py input.jpg --output measured_objects.jpg
